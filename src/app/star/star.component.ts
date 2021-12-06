@@ -7,8 +7,8 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class StarComponent implements OnInit {
 
-  @Input() rating: number = 3.5;
-  @Output() starClicked = new EventEmitter<number>();
+  @Input('starRating') rating: number = 3.5;
+  @Output('starEventEmitter') starClicked = new EventEmitter<number>();
   width: number = 90;
 
   constructor() { }
